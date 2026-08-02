@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="doc-title">Moonlorian — Inteligencia artificial aplicada</title>
+<link rel="icon" type="image/png" href="assets/logo-redondo-magenta.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="bg-galaxy" aria-hidden="true"></div>
+
+  <header class="nav">
+    <img class="brand-logo" src="assets/logo-horitzontal-blanco.png" alt="Moonlorian" height="26">
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="#servicios" data-i18n="nav_servicios">Servicios</a>
+        <a href="#contacto" data-i18n="nav_contacto">Contacto</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Idioma">
+        <button type="button" data-lang="es" class="active">ES</button>
+        <button type="button" data-lang="ca">CA</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="inicio">
+    <img class="hero-mark" src="assets/logo-redondo-magenta.png" alt="Moonlorian" width="176" height="176">
+    <h1 data-i18n-html="hero_title">La tecnología también tiene <span>fases</span>.<br>Nosotros gobernamos cada una.</h1>
+    <p class="subtitle" data-i18n="hero_subtitle">Moonlorian aplica inteligencia artificial al desarrollo de software, a entornos enterprise, al blockchain y a la ciberseguridad, convirtiendo la tecnología en capacidad operativa y ventaja competitiva.</p>
+    <a class="cta" href="#contacto" data-i18n="hero_cta">Hablemos →</a>
+  </section>
+
+  <section class="section" id="servicios">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="serv_eyebrow">Qué hacemos</span>
+      <h2 data-i18n="serv_title">Cuatro fases, un mismo ciclo</h2>
+    </div>
+    <div class="phases-grid">
+      <div class="phase-card reveal">
+        <div class="moon phase-new" aria-hidden="true"></div>
+        <span class="phase-label" data-i18n="phase1_label">Fase 01 — Luna nueva</span>
+        <h3 data-i18n="phase1_title">IA aplicada al desarrollo</h3>
+        <p data-i18n="phase1_desc">Todo empieza en la oscuridad: inteligencia artificial integrada en el ciclo de desarrollo de software, desde el diseño hasta el release.</p>
+      </div>
+      <div class="phase-card reveal">
+        <div class="moon phase-waxing" aria-hidden="true"></div>
+        <span class="phase-label" data-i18n="phase2_label">Fase 02 — Luna creciente</span>
+        <h3 data-i18n="phase2_title">IA en entornos enterprise</h3>
+        <p data-i18n="phase2_desc">Procesos y plataformas enterprise potenciados con IA para escalar operaciones con criterio y eficiencia.</p>
+      </div>
+      <div class="phase-card reveal">
+        <div class="moon phase-full" aria-hidden="true"></div>
+        <span class="phase-label" data-i18n="phase3_label">Fase 03 — Luna llena</span>
+        <h3 data-i18n="phase3_title">IA aplicada a blockchain</h3>
+        <p data-i18n="phase3_desc">Máxima visibilidad: soluciones blockchain e identidad digital potenciadas con IA, bajo criterios de compliance MiCA.</p>
+      </div>
+      <div class="phase-card reveal">
+        <div class="moon phase-waning" aria-hidden="true"></div>
+        <span class="phase-label" data-i18n="phase4_label">Fase 04 — Luna menguante</span>
+        <h3 data-i18n="phase4_title">IA aplicada a ciberseguridad</h3>
+        <p data-i18n="phase4_desc">El conocimiento se transmite: IA y ciberseguridad bajo ENS, NIS2 y DORA, en formación técnica aplicada.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contacto" id="contacto">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="contact_eyebrow">Hablemos</span>
+      <h2 data-i18n="contact_title">¿Listo para gobernar tu próxima fase?</h2>
+    </div>
+    <p class="reveal" style="color:var(--ink-dim); max-width:46ch;" data-i18n="contact_p">Cuéntanos en qué punto del ciclo está tu empresa y qué necesita para avanzar a la siguiente fase.</p>
+    <div class="contact-links reveal">
+      <button type="button" id="contact-email-btn" data-i18n="contact_email_btn">Escríbenos por email</button>
+      <a href="https://es.linkedin.com/company/moonlorian" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://x.com/moonlorian" target="_blank" rel="noopener" aria-label="X">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.6 10.6 20.4 3h-1.6l-5.9 6.6L8.2 3H3l7.1 9.9L3 21h1.6l6.2-7 5 7H21l-7.4-10.4Zm-2.2 2.5-.7-1L5 4.3h2.2l4.6 6.4.7 1 6 8.3h-2.2l-4.9-6.5Z"/></svg>
+        <span>X</span>
+      </a>
+    </div>
+    <p class="contact-note reveal" data-i18n="contact_note">Al pulsar se abrirá tu gestor de correo habitual.</p>
+  </section>
+
+  <section class="accreditation reveal">
+    <a href="http://www.accio.gencat.cat" target="_blank" rel="noopener">
+      <img src="assets/segell-accio-horitzontal.png" alt="Segell ACCIÓ — Persona assessora acreditada">
+    </a>
+    <p class="accreditation-text">
+      <span data-i18n="accreditation_text">Persona assessora acreditada per</span>
+      <a href="https://www.accio.gencat.cat/ca/serveis/processos-acreditacio/persones-assessores/" target="_blank" rel="noopener" data-i18n="accreditation_link">ACCIÓ, Generalitat de Catalunya</a>
+    </p>
+  </section>
+
+  <footer class="site-footer">
+    <span class="footer-brand">
+      <img src="assets/logo-redondo-magenta.png" alt="" width="20" height="20" style="border-radius:50%;">
+      © 2026 Moonlorian
+    </span>
+    <span class="footer-links">
+      <a href="privacidad.html" data-i18n="footer_privacy">Política de privacidad</a>
+    </span>
+    <span data-i18n="footer_tagline">Inteligencia Artificial · Desarrollo · Enterprise · Blockchain · Ciberseguridad</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
