@@ -1,6 +1,8 @@
 const translations = {
   es: {
     doc_title: "Moonlorian — Inteligencia artificial aplicada",
+    meta_description: "Moonlorian aplica inteligencia artificial al desarrollo de software, a entornos enterprise, al blockchain y a la ciberseguridad.",
+    og_locale: "es_ES",
     nav_servicios: "Servicios",
     nav_contacto: "Contacto",
     hero_title: 'La tecnología también tiene <span>fases</span>.<br>Nosotros gobernamos cada una.',
@@ -32,6 +34,8 @@ const translations = {
   },
   ca: {
     doc_title: "Moonlorian — Intel·ligència artificial aplicada",
+    meta_description: "Moonlorian aplica intel·ligència artificial al desenvolupament de programari, a entorns enterprise, al blockchain i a la ciberseguretat.",
+    og_locale: "ca_ES",
     nav_servicios: "Serveis",
     nav_contacto: "Contacte",
     hero_title: 'La tecnologia també té <span>fases</span>.<br>Nosaltres governem cadascuna.',
@@ -63,6 +67,8 @@ const translations = {
   },
   en: {
     doc_title: "Moonlorian — Applied artificial intelligence",
+    meta_description: "Moonlorian builds AI into software development, enterprise systems, blockchain, and cybersecurity.",
+    og_locale: "en_GB",
     nav_servicios: "Services",
     nav_contacto: "Contact",
     hero_title: 'Every technology moves through <span>phases</span>.<br>We guide it through all of them.',
@@ -99,6 +105,15 @@ function applyLanguage(lang){
   if(!dict) return;
   document.documentElement.lang = lang;
   document.title = dict.doc_title;
+  const setMeta = (id, attr, value) => {
+    const el = document.getElementById(id);
+    if(el) el.setAttribute(attr, value);
+  };
+  setMeta('meta-description', 'content', dict.meta_description);
+  setMeta('og-description', 'content', dict.meta_description);
+  setMeta('og-title', 'content', dict.doc_title);
+  const ogLocale = document.querySelector('meta[property="og:locale"]');
+  if(ogLocale) ogLocale.setAttribute('content', dict.og_locale);
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if(dict[key] !== undefined) el.textContent = dict[key];
